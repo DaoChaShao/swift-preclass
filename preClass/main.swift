@@ -66,9 +66,40 @@ print(ShapeArea.triangle(sideA: width, sideB: height, sideC: other).description)
 print(SEPERATOR)
 
 // struct
-var students: Array<Student> = []
+let genders: [String] = [
+    studentGender.male.rawValue, studentGender.female.rawValue,
+]
+var students: [Student] = []
 for _ in 1...3 {
     let name: String = faker.name.firstName()
     let age: Int = Int.random(in: 6...24)
-    let gender
+    let gender: String = genders.randomElement()!
+    let chinese: Int = Int.random(in: 0...100)
+    let math: Int = Int.random(in: 0...100)
+    let english: Int = Int.random(in: 0...100)
+
+    let student: Student = Student(
+        name: name, age: age, gender: gender,
+        chinese: chinese, math: math, english: english
+    )
+    students.append(student)
 }
+
+for student in students {
+    print(student)
+}
+
+print(
+    "Is \(students[0].getName()), who is studying at the \(Student.school), an adult? \(students[0].getIsAdult())!"
+)
+print(SEPERATOR)
+
+students[0].ageIncrease()
+students[0]["chinese", "add"] = 5
+print(SEPERATOR)
+
+for student in students {
+    print(student)
+}
+
+print(SEPERATOR)
