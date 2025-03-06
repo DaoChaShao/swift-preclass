@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		37112A4B2D795D9800A0C97A /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 37112A4A2D795D9800A0C97A /* Fakery */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		37112A2A2D795CAE00A0C97A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37112A4B2D795D9800A0C97A /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = preClass;
 			packageProductDependencies = (
+				37112A4A2D795D9800A0C97A /* Fakery */,
 			);
 			productName = preClass;
 			productReference = 37112A2C2D795CAE00A0C97A /* preClass */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 37112A232D795CAE00A0C97A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				37112A492D795D9800A0C97A /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 37112A2D2D795CAE00A0C97A /* Products */;
 			projectDirPath = "";
@@ -285,6 +294,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37112A492D795D9800A0C97A /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37112A4A2D795D9800A0C97A /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37112A492D795D9800A0C97A /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37112A242D795CAE00A0C97A /* Project object */;
 }
