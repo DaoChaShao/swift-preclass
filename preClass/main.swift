@@ -64,3 +64,11 @@ print(ShapeArea.retangle(width: width, height: height).description)
 print(ShapeArea.circle(radius: other).description)
 print(ShapeArea.triangle(sideA: width, sideB: height, sideC: other).description)
 print(SEPERATOR)
+
+// struct
+var students: Array<Student> = []
+for _ in 1...3 {
+    let name: String = faker.name.firstName()
+    let age: Int = Int.random(in: 6...24)
+    let gender
+}
